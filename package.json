@@ -1,16 +1,15 @@
 {
   "name": "no-bs-react-boilerplate",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Simple Typescript boilerplate for writing React.js web apps",
   "main": "server.ts",
   "author": "Jean M. Lescure",
   "license": "Apache-2.0",
   "scripts": {
+    "dev": "concurrently \"rollup -cw\" \"yarn server\" \"livereload ./public\"",
     "server": "ts-node -r dotenv/config server.ts",
-    "build": "rm public/bundle* && rollup -c",
-    "start": "yarn build && yarn server",
-    "watch": "rollup -cw",
-    "dev": "concurrently \"yarn watch\" \"NODE_ENV=development yarn server\" \"livereload ./public\""
+    "build": "rm public/bundle* && NODE_ENV=production rollup -c",
+    "start": "yarn build && NODE_ENV=production yarn server"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
