@@ -1,6 +1,6 @@
 {
   "name": "no-bs-react-boilerplate",
-  "version": "1.2.0",
+  "version": "2.0.0-rc",
   "description": "Simple Typescript boilerplate for writing React.js web apps",
   "main": "server.ts",
   "author": "Jean M. Lescure",
