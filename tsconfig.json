@@ -1,14 +1,15 @@
 {
   "ts-node": {
     "compilerOptions": {
-      "module": "commonjs"
+      "module": "commonjs",
+        "jsx": "react-jsx",
     }
   },
   "compilerOptions": {
     "target": "ES5",
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "esModuleInterop": true
   },
   "include": ["src"],
