@@ -48,7 +48,7 @@ There's two ways of running the app:
 yarn dev
 ```
 
-Uses [concurrently]() to run Rollup in watch mode (which means it will transpile the bundle js file
+Uses [concurrently](https://www.npmjs.com/package/concurrently) to run Rollup in watch mode (which means it will transpile the bundle js file
 when you save changes to your code), as well as a combo between an Express.js server and Liveserver
 which will automagically setup [hot-reload]() functionality so your browser reloads as you modify
 your source!
